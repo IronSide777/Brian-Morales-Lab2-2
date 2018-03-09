@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/smashicons-travel-solid/60/16_-_Sunbed_Solid-512.png" type="image">
+  </head>
+      <style>
+      body{
+        border: solid;
+        border-color: red;
+        border-width: 2px;
+        padding-top: 10px;
+        border-b
+      }
+
+      .first{
+        margin-left: 45px;
+        margin-bottom: 2px;
+      }
+
+      .last{
+        margin-left: 47px;
+        margin-bottom: 2px;
+      }
+
+      .email{
+        margin-left: 16px;
+        margin-bottom: 2px;
+      }
+
+      .phone{
+        margin-left: 76px;
+        margin-bottom: 2px;
+      }
+
+      .add{
+        margin-left: 6px;
+        margin-bottom: 2px;
+      }
+
+      .city{
+        margin-left: 89px;
+        margin-bottom: 2px
+      }
+
+      .zip{
+        margin-left: 56px;
+        margin-bottom: 2px;
+      }
+
+      .state{
+        margin-left: 84px;
+        margin-bottom: 2px;
+      }
+
+      .checkin{
+        margin-left: 23px;
+      }
+
+      .checkout{
+        margin-left: 15px;
+        margin-bottom: 2px;
+      }
+
+      .Pay{
+        margin-left: 6px;
+        margin-bottom: 2px;
+      }
+
+      .card{
+        margin-left: 28px;
+      }
+
+      </style>
+    <body>
+      <header>
+        <h1>Montclair Red Hawk Resort</h1>
+
+
+      <section id="1">
+        <nav>
+          <a href="RedHawkResort.html">Home</a>
+          <a href="yurts.html">Yurts</a>
+          <a href="Activities.html">Activities</a>
+          <a href="ReservationForm.html">Reservation</a>
+        </nav>
+      </section>
+    </header>
+
+      <form method = "post" action = "">
+        <h4>Reservations Form</h4>
+        <p>
+          <label>
+            First Name:
+            <input class="first" type="text" name="First Name" autofocus>
+          </label>
+        </br>
+
+
+          <label>
+            Last Name:
+            <input class="last" type="text" name="Last Name">
+          </label>
+        </br>
+          <strong>Address</strong>
+        </br>
+
+          <label>
+            Number & Street:
+            <input class="add" type="text" name="address">
+        </label>
+      </br>
+
+          <label>
+            City:
+            <input class="city" type="text" name="city">
+          </label>
+        </br>
+
+        <label>State:
+          <input class="state" list="state" name="browser">
+  <datalist id="state">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </datalist>
+      </br>
+
+          <label>
+            Zip Code:
+            <input class="zip" type="number" name="zipcode">
+          </label>
+        </br>
+
+          <label>
+            Check-in Date:
+            <input class="checkin" type="date" name="Check-in">
+          </label>
+        </br>
+
+          <label>
+            Check-out Date:
+            <input class="checkout" type="date" name="Check-out">
+          </label>
+        </br>
+
+          <label>
+            Phone:
+            <input class="phone" placeholder="(###)-###-####" pattern = "\(\d{3}\) +\d{3}-\d{4}" required
+ type="tel" name="Phone">
+          </label>
+          <span>(###)-###-####</span>
+        </br>
+
+
+          <label>
+            E-mail Address:
+            <input class="email" placeholder="name@domain.com" type="text" name="E-mail">
+          </label>
+        </br>
+
+          <label>Payment Method:
+            <select class="Pay" name="Payment">
+              <option value="MC">MasterCard</option>
+              <option value="VISA">Visa</option>
+              <option value="AMEX">American Express</option>
+              <option value="Discover">Discover</option>
+
+            </select>
+
+          </label>
+        </br>
+
+          <label>
+            Card Number:
+            <input class="card" type="number" name="creditcard">
+          </label>
+        </br>
+
+
+
+    <table>
+      <tr>
+        <td>
+        <label>
+          <strong>Special Requests:</strong>
+        </td>
+        <td>
+          <textarea name="comments" placeholder="Enter your request here"
+            rows = "6" cols="36"></textarea>
+        </td>
+          </br>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        </td>
+      </tr>
+    </table>
+
+      </form>
+
+      <footer>
+        <em>Copyright &copy; 2018 Montclair Red Hawk Resort</em>
+        <address>
+          <a href="Mailto:brian@morales.com">brian@morales.com</a>
+        </address>
+      </footer>
+    </body>
+  </html>
